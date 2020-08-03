@@ -1,13 +1,24 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body {
+    font-family: 'Press Start 2P', cursive;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.mainBox {
+    background-color: #2A2A2A;
+}
 
-*/
+.glow {
+
+  animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 3px #000000, 0 0 7px #000000, 0 0 11px #FE3838, 0 0 15px #FE3838, 0 0 20px #FE3838, 0 0 25px #FE3838, 0 0 30px #FE3838;
+  }
+  to {
+    text-shadow: 0 0 7px #000000, 0 0 11px #A1F1E3, 0 0 15px #A1F1E3, 0 0 20px #A1F1E3, 0 0 25px #A1F1E3, 0 0 30px #A1F1E3, 0 0 35px #A1F1E3;
+  }
+}
